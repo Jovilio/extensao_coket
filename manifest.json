@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Coket",
+  "version": "1.0.0",
+  "description": "Coket: guarde, partilhe e gere links da página atual com um botão flutuante.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Coket"
+  }
+}

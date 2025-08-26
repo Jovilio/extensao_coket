@@ -1,0 +1,143 @@
+/* Botão flutuante Coket: centralizado na parte inferior */
+#coket-fab {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-size: 14px;
+  border: none;
+  border-radius: 999px;
+  /* background: #111827; */
+  background: #003366;
+  /* color: #222; */
+  color: #fff;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, .2);
+  /* box-shadow: 0px 2px 0px 1px gray; */
+  cursor: pointer;
+  z-index: 2147483646;
+  /* acima de quase tudo */
+
+}
+
+#coket-fab:hover {
+  filter: brightness(1.06);
+}
+
+/* Painel */
+#coket-panel {
+  position: fixed;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  width: min(92vw, 420px);
+  max-height: 55vh;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .18);
+  z-index: 2147483646;
+  overflow: hidden;
+  display: none;
+}
+
+#coket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+#coket-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+}
+
+#coket-close {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+
+#coket-body {
+  padding: 10px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+#coket-save {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#coket-save:hover {
+  filter: brightness(1.06);
+}
+
+#coket-list {
+  margin-top: 10px;
+  max-height: 34vh;
+  overflow-y: auto;
+  border-top: 1px dashed #e5e7eb;
+  padding-top: 8px;
+}
+
+.coket-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: start;
+  padding: 8px 6px;
+  border-radius: 8px;
+}
+
+.coket-item:hover {
+  background: #f9fafb;
+}
+
+.coket-url {
+  font-size: 12px;
+  color: #374151;
+  word-break: break-all;
+}
+
+.coket-actions {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.coket-actions button {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.coket-actions button:hover {
+  background: #f3f4f6;
+}
+
+#coket-empty {
+  font-size: 13px;
+  color: #6b7280;
+  padding: 8px 2px;
+}
